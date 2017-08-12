@@ -44,7 +44,9 @@ export class HomeComponent implements OnInit {
 
   /**
    * Pushes a new name onto the names array
-   * @return {boolean} false to prevent default form submit behavior to refresh the page.
+   *
+   * @return {boolean} false to prevent default form submit behavior to refresh
+   * the page.
    */
   addName(): boolean {
     // TODO: implement nameListService.post
@@ -53,4 +55,8 @@ export class HomeComponent implements OnInit {
     return false;
   }
 
+  logNames(): boolean {
+    console.log(this.names);
+    return false;
+  }
 }
